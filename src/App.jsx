@@ -8,9 +8,8 @@ function App() {
 
   return (
     <>
-      
+   
       <NavBar />
-      <h1>App</h1>
       <ItemListContainer message="página en construcción, proximamente tendrán novedades" />
 
     </>
