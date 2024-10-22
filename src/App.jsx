@@ -10,6 +10,7 @@ function App() {
     <>
    
       <NavBar />
+      
       <ItemListContainer message="página en construcción, proximamente tendrán novedades" />
 
     </>
