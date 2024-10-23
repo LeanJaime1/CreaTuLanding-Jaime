@@ -1,8 +1,5 @@
-.message{
-    font-size: 20px;
-}
-
 .cards{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 
     repeat(
@@ -12,6 +9,7 @@
     justify-content: space-evenly;
     gap: 32px;
     text-align: left;
+    border-radius: 20px;
 }
 
 .card img{
@@ -20,5 +18,30 @@
 }
 
 
+.card:hover{
+    border-color: black;
+    translate: 10px;
+}
+
+h1{
+    text-align: left;
+    margin-top: 20px;
+}
 
 
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+.button-price{
+  
+    background-color: #263E3E;
+    color: white;
+    border-radius: 15px;
+    font-weight: bolder;
+    border-color: #263E3E;
+  
+}

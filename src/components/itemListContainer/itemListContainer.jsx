@@ -3,7 +3,7 @@ import './itemListContainer.css'
 import ItemList from './ItemList'
 import { getProducts } from '../data/backend-falso'
 
-const itemListContainer = ({message}) => {
+const itemListContainer = ({}) => {
 
   const [products, setProducts]= useState([])
 
@@ -21,8 +21,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className='message'>{message}</div>
-
+    <h1>Zapatillas Hombre</h1>
     <div>
     <ItemList products={products} />
     </div>
