@@ -1,18 +1,20 @@
 import React from 'react'
-import { getProducts } from '../data/backend-falso'
+import Item from './Item'
 
 const ItemList = ({products}) => {
 
 
   return(
-    <div>
-        {products.map((e) =>
+    <div className='cards'>
+        {products.map((elemento) =>
             {
                 return(
-                    <div>{e.nombre}</div>
-                    
+                  
+                  <Item elemento={elemento} key={elemento.nombre} />
+                  
                 )
-            } )}
+            } 
+          )}
     </div>
   )
 }
