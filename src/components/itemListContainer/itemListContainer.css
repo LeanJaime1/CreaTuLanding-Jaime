@@ -10,7 +10,18 @@
     gap: 32px;
     text-align: left;
     border-radius: 20px;
+    
 }
+
+
+
+@media (width >= 1250px){
+    .cards{
+        margin: 0 200px 0 200px;
+    }
+}
+
+
 
 .card img{
     height: 100%;
@@ -19,13 +30,14 @@
 
 
 .card:hover{
-    border-color: black;
-    translate: 10px;
+    -webkit-box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
+-moz-box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
+box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
 }
 
 h1{
     text-align: left;
-    margin-top: 20px;
+    margin: 20px 0 20px 20px ;
 }
 
 
@@ -38,10 +50,10 @@ h1{
 
 .button-price{
   
-    background-color: #263E3E;
+    background-color: lightgray;
     color: white;
     border-radius: 15px;
     font-weight: bolder;
-    border-color: #263E3E;
+    border-color: black;
   
 }

@@ -15,7 +15,7 @@ const Item = ({elemento}) => {
     </div>
   </div>
 </div>
-</>
+</> 
   )
 }
 
