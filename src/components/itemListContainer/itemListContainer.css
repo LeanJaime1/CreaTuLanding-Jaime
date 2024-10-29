@@ -19,6 +19,7 @@
     .cards{
         margin: 0 200px 0 200px;
     }
+    
 }
 
 
@@ -36,8 +37,9 @@ box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
 }
 
 h1{
+    font-size: 40px;
     text-align: left;
-    margin: 20px 0 20px 20px ;
+    margin: 20px 0px 20px 200px ;
 }
 
 
@@ -48,12 +50,20 @@ h1{
     align-items: baseline;
 }
 
+.button-price:hover{
+    color:rgb(55, 76, 192);
+    background-color: white;
+    border: 1px rgb(55, 76, 192) solid;
+}
+
+
 .button-price{
   
-    background-color: lightgray;
-    color: white;
-    border-radius: 15px;
+    color: lightgray;
+    background-color:rgb(55, 76, 192);
+    border-radius: 20px;
     font-weight: bolder;
-    border-color: black;
+    border: 1px;
+    padding: 6px;
   
 }

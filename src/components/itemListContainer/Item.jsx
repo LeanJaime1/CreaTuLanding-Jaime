@@ -11,7 +11,7 @@ const Item = ({elemento}) => {
     <p class="card-text">{elemento.nombre}</p>
     <div className='price'>
     <p class="card-text"><small class="text-muted">{elemento.marca}</small></p>
-    <button className='button-price'>+</button>
+    <button className='button-price'>Add to cart</button>
     </div>
   </div>
 </div>
