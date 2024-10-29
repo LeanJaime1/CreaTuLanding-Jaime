@@ -15,7 +15,7 @@ const baseDeDatos = [
     },
     {
         id:3,
-        nombre:"Zapatillas Puma Slipstream Reclaim ",
+        nombre:"Zapatillas Puma Slipstream ",
         marca: "Puma",
         precio: 179.999,
         img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw37c07f2d/products/PU398165-01/PU398165-01-1.JPG"
@@ -64,7 +64,7 @@ const baseDeDatos = [
     },
     {
         id:10,
-        nombre:"Zapatillas Jordan Air 1 Low Se Craft",
+        nombre:"Zapatillas Jordan Air 1 Low",
         marca: "Nike",
         precio: 219.999,
         img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6d48ba7d/products/NIFD6819-300/NIFD6819-300-1.JPG"
