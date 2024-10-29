@@ -48,12 +48,20 @@ h1{
     align-items: baseline;
 }
 
+.button-price:hover{
+    color:rgb(55, 76, 192);
+    background-color: white;
+    border: 1px rgb(55, 76, 192) solid;
+}
+
+
 .button-price{
   
-    background-color: lightgray;
-    color: white;
-    border-radius: 15px;
+    color: lightgray;
+    background-color:rgb(55, 76, 192);
+    border-radius: 20px;
     font-weight: bolder;
-    border-color: black;
+    border: 1px;
+    padding: 6px;
   
 }
