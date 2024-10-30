@@ -57,7 +57,7 @@ const baseDeDatos = [
     },
     {
         id:9,
-        nombre:"Zapatillas adidas Campus 00s",
+        nombre:"Zapatillas adidas Campus 20s",
         marca: "Adidas",
         precio: 171.999,
         img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw9f29b22d/products/ADH03471/ADH03471-1.JPG"
@@ -99,7 +99,7 @@ const baseDeDatos = [
     },
     {
         id:15,
-        nombre:"Zapatillas Nike Dunk Low Retro",
+        nombre:"Zapatillas Nike Dunk Low Retros",
         marca: "Nike",
         precio: 239.999,
         img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6d8e772f/products/NIHF2874-001/NIHF2874-001-1.JPG"

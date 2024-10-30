@@ -1,11 +1,21 @@
 import React from 'react'
 import './cartWidget.css'
 
-const cartWidget = () => {
+const cartWidget = ({contador}) => {
+
+
+
+
+
+
+  
   return (
+
+    
     
     <div>
-      <span>0</span>
+
+      <span>{contador}</span>
       <i class="fa-solid fa-cart-shopping"></i> 
     </div>
     

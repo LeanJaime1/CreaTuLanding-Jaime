@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './Item'
 
-const ItemList = ({products}) => {
+const ItemList = ({products, addToCart}) => {
 
 
   return(
@@ -10,7 +10,7 @@ const ItemList = ({products}) => {
             {
                 return(
 
-                  <Item elemento={elemento} key={elemento.nombre} />
+                  <Item elemento={elemento} key={elemento.nombre} addToCart={addToCart}/>
                   
                 )
             } 

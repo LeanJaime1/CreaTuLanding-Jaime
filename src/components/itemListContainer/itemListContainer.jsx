@@ -3,9 +3,9 @@ import './itemListContainer.css'
 import ItemList from './ItemList'
 import { getProducts } from '../data/backend-falso'
 
-const itemListContainer = ({}) => {
+const itemListContainer = ({addToCart}) => {
 
-  const [products, setProducts]= useState([])
+  const [products, setProducts]= useState([]);
 
 
 
@@ -17,17 +17,20 @@ useEffect(() => {
 },[])
 
 
- 
+
 
   return (
     <>
     <h1>Zapatillas Hombre</h1>
     <div>
-    <ItemList products={products} />
+    <ItemList products={products} addToCart={addToCart}/>
     </div>
     </>
   )
 }
 
 export default itemListContainer
+
+
+
 

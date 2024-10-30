@@ -4,7 +4,7 @@ import './navBar.css'
 
 
 
-function NavBar (){
+function NavBar ({contador}){
     return(
       <>
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +19,7 @@ function NavBar (){
                 <a class="nav-link active" aria-current="page" href="#">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><CartWidget/></a>
+                <a class="nav-link active" aria-current="page" href="#"><CartWidget contador={contador}/></a>
               </li>
             </ul>
           </div>
