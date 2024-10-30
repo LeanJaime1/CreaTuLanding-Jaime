@@ -10,3 +10,10 @@
     border: solid red 1px;
     color: white;
 }
+
+.empty-button:hover{
+    background-color: white;
+    border: solid red 1px;
+    color: red;
+    font-weight: bolder;
+}
