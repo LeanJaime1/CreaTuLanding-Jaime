@@ -3,3 +3,10 @@
     font-size: 25px;
 }
 
+.empty-button{
+    font-size: 10px;
+    border-radius: 10px;
+    background-color: red;
+    border: solid red 1px;
+    color: white;
+}

@@ -12,9 +12,15 @@ function App() {
     setContador(contador + 1);
   };
 
+  const emptyCart = () => {
+    setContador(0);
+    console.log('El carrito ha sido vaciado.');
+  };
+
+
   return (
     <>
-      <NavBar contador={contador}/>
+      <NavBar contador={contador} emptyCart={emptyCart}/>
       <ItemListContainer addToCart={addToCart} />
     </>
   );

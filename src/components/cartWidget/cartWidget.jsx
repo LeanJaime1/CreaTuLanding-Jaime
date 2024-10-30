@@ -4,10 +4,6 @@ import './cartWidget.css'
 const cartWidget = ({contador}) => {
 
 
-
-
-
-
   
   return (
 

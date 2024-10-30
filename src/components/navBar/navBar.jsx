@@ -4,7 +4,7 @@ import './navBar.css'
 
 
 
-function NavBar ({contador}){
+function NavBar ({contador, emptyCart}){
     return(
       <>
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,6 +20,9 @@ function NavBar ({contador}){
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"><CartWidget contador={contador}/></a>
+              </li>
+              <li class="nav-item">
+                <button className='empty-button' onClick={emptyCart}>x</button>
               </li>
             </ul>
           </div>
