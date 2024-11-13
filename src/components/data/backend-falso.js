@@ -151,3 +151,9 @@ export const getProducts = () => {
         }, 0);
       });
 }
+
+
+
+export default baseDeDatos; 
+
+
