@@ -16,3 +16,11 @@
     border: solid red 1px;
     color: red;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  

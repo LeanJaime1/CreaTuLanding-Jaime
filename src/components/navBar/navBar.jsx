@@ -16,7 +16,7 @@ function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="#">SNEAKERS</a>
+          <a className="navbar-brand" href="./index.html">SNEAKERS</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -35,10 +35,8 @@ function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
                   <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Jordan')}>Jordan</a></li>
                   <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Puma')}>Puma</a></li>
                   <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Fila')}>Fila</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={resetFilters}> - Quitar filtros</a></li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <button className="btn btn-outline-secondary" onClick={resetFilters}>Quitar Filtros</button>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#"><CartWidget contador={contador} /></a>
