@@ -14,8 +14,7 @@ const ItemListContainer = ({ products, addToCart }) => {
 
   return (
     <>
-      <h1>Zapatillas Hombre</h1>
-      <div>
+      <div className='mt-3'>
         <ItemList products={products} addToCart={addToCart} />
       </div>
     </>

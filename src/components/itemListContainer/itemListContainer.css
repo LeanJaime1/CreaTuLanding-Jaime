@@ -34,7 +34,7 @@
     -webkit-box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
 -moz-box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
 box-shadow: 5px 3px 32px -4px rgba(115,115,115,1);
-transform: scale(1.1);
+
 }
 
 h1{
@@ -52,16 +52,16 @@ h1{
 }
 
 .button-price:hover{
-    color:rgb(55, 76, 192);
+    color:#343a40;
     background-color: white;
-    border: 1px rgb(55, 76, 192) solid;
+    border: 1px #343a40 solid;
 }
 
 
 .button-price{
   
     color: lightgray;
-    background-color:rgb(55, 76, 192);
+    background-color:#343a40(55, 76, 192);
     border-radius: 20px;
     font-weight: bolder;
     border: 1px;
@@ -71,7 +71,7 @@ h1{
 
 
 .button-price {
-    --background: #362A89;
+    --background: #343a40;
     --text: #fff;
     --cart: #fff;
     --tick: var(--background);
