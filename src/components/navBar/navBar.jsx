@@ -1,6 +1,7 @@
 import CartWidget from '../cartWidget/cartWidget';
 import './navBar.css';
 import baseDeDatos from '../data/backend-falso';
+import { Link } from 'react-router-dom';
 
 const filtrarPorMarca = (products, marca) => {
   return products.filter(product => product.marca === marca);
