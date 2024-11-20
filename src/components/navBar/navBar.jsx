@@ -1,7 +1,7 @@
+import { Link } from 'react-router-dom';
 import CartWidget from '../cartWidget/cartWidget';
 import './navBar.css';
 import baseDeDatos from '../data/backend-falso';
-import { Link } from 'react-router-dom';
 
 const filtrarPorMarca = (products, marca) => {
   return products.filter(product => product.marca === marca);
@@ -17,14 +17,14 @@ function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container">
-          <a className="navbar-brand text-light" href="index.html">SNEAKERS</a>
+          <Link className="navbar-brand text-light" to="/">SNEAKERS</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon text-light"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active text-light" aria-current="page" href="#">Productos</a>
+                <Link className="nav-link active text-light" to="/productos">Productos</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +40,7 @@ function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link active text-light" aria-current="page" href="#"><CartWidget contador={contador} /></a>
+                <Link className="nav-link active text-light" to="#"><CartWidget contador={contador} /></Link>
               </li>
               <li className="nav-item">
                 <button className="empty-button" onClick={emptyCart}>x</button>
