@@ -4,14 +4,22 @@ import ItemList from './ItemList';
 import { getProducts } from '../data/backend-falso';
 import { useParams } from 'react-router-dom';
 
-const ItemListContainer = ({ products, addToCart }) => {
-  const [allProducts, setAllProducts] = useState([]);
+const ItemListContainer = ({ addToCart }) => {
+  const { marca } = useParams();
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getProducts()
-      .then(res => setAllProducts(res))
+      .then(res => {
+        if (marca) {
+          const filteredProducts = res.filter(product => product.marca === marca);
+          setProducts(filteredProducts);
+        } else {
+          setProducts(res);
+        }
+      })
       .catch(e => console.error(e));
-  }, []);
+  }, [marca]);
 
   return (
     <>

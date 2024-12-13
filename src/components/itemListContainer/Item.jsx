@@ -30,14 +30,19 @@ const Item = ({ elemento, addToCart }) => {
         <div className="card-body">
           <h5 className="card-title">${elemento.precio}</h5>
           <p className="card-text">{elemento.nombre}</p>
-          <Link to={`/articulo/${elemento.id}`} className="text-decoration-none">
-            <button >
-              <span>Ver detalles</span>
-            </button>
-          </Link>
-          <div className='price'>
-            <p className="card-text"><small className="text-muted">{elemento.marca}</small></p>
+
+          <div className='articleText'>
+            <Link to={`/articulo/${elemento.id}`} className="text-decoration-none">
+              <button className='detailButton' >
+                <span>Ver detalles</span>
+              </button>
+            </Link>
+            <div className='price'>
+              <p className="card-text"><small className="text-muted">{elemento.marca}</small></p>
+            </div>
           </div>
+
+
         </div>
       </div>
     </>

@@ -14,10 +14,10 @@ function NavBar({ contador, emptyCart }) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link active text-light" to="/productos">Adidas</Link>
+                <Link className="nav-link active text-light" to="/marca/Adidas">Adidas</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active text-light" to="/productos">Nike</Link>
+                <Link className="nav-link active text-light" to="/marca/Nike">Nike</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active text-light" to="#"><CartWidget contador={contador} /></Link>
