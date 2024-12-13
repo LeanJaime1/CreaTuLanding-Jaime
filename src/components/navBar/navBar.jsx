@@ -1,18 +1,8 @@
 import { Link } from 'react-router-dom';
 import CartWidget from '../cartWidget/cartWidget';
 import './navBar.css';
-import baseDeDatos from '../data/backend-falso';
 
-const filtrarPorMarca = (products, marca) => {
-  return products.filter(product => product.marca === marca);
-};
-
-function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
-  const handleFilterChange = (brand) => {
-    const filteredProducts = filtrarPorMarca(baseDeDatos, brand);
-    setFilteredProducts(filteredProducts);
-  };
-
+function NavBar({ contador, emptyCart }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">

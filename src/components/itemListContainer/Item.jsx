@@ -29,14 +29,14 @@ const Item = ({ elemento, addToCart }) => {
         <img src={elemento.img} className="card-img-top" alt={elemento.nombre} />
         <div className="card-body">
           <h5 className="card-title">${elemento.precio}</h5>
+          <p className="card-text">{elemento.nombre}</p>
           <Link to={`/articulo/${elemento.id}`} className="text-decoration-none">
-            <p className="card-text">{elemento.nombre}</p>
+            <button >
+              <span>Ver detalles</span>
+            </button>
           </Link>
           <div className='price'>
             <p className="card-text"><small className="text-muted">{elemento.marca}</small></p>
-            <button className='button-price' onClick={() => addToCart(elemento)}> 
-              <span>Ver detalles</span>
-            </button>
           </div>
         </div>
       </div>

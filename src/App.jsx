@@ -9,7 +9,6 @@ import Articulo from './components/articulo/Articulo.jsx';
 
 function App() {
   const [contador, setContador] = useState(0);
-  const [filteredProducts, setFilteredProducts] = useState(baseDeDatos);
 
   const addToCart = () => {
     setContador(contador + 1);
@@ -20,20 +19,14 @@ function App() {
     console.log('El carrito ha sido vaciado.');
   };
 
-  const resetFilters = () => { 
-    setFilteredProducts(baseDeDatos); 
-  };
-
   return (
     <>
       <BrowserRouter>
-        <NavBar contador={contador} emptyCart={emptyCart} setFilteredProducts={setFilteredProducts} resetFilters={resetFilters} />
+        <NavBar contador={contador} emptyCart={emptyCart} />
         <Routes>
-          <Route path="/" element={<ItemListContainer products={filteredProducts} addToCart={addToCart} />} />
+          <Route path="/" element={<ItemListContainer products={baseDeDatos} addToCart={addToCart} />} />
           <Route path="/articulo/:id" element={<Articulo />} />
-          <Route path="/marca/:Adidas"  />
-          <Route path="/marca/:Nike"  />
-          <Route path="*" element={<ItemListContainer />} />
+          <Route path="*" element={<ItemListContainer products={baseDeDatos} addToCart={addToCart} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
