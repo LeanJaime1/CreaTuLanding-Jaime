@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import baseDeDatos from '../data/backend-falso.js'; 
+import './articulo.css';
 
 const Articulo = () => {
   const { id } = useParams();
@@ -12,12 +13,13 @@ const Articulo = () => {
   }
 
   return (
-    <div>
-      <h1>Detalles del Artículo</h1>
-      <p>ID del Artículo: {id}</p>
-      <p>Nombre: {articulo.nombre}</p>
-      <p>Precio: ${articulo.precio}</p>
+    <div className='articleBox'>
       <img src={articulo.img} alt={articulo.nombre} />
+      <div className='articleTextBox'>
+        <h1>{articulo.nombre}</h1>
+        <p>${articulo.precio}</p>
+        <p>{articulo.descripcion}</p>
+      </div>
     </div>
   );
 };

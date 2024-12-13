@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './itemListContainer.css';
 import ItemList from './ItemList';
 import { getProducts } from '../data/backend-falso';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ products, addToCart }) => {
   const [allProducts, setAllProducts] = useState([]);

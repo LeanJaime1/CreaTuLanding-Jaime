@@ -4,7 +4,8 @@ const baseDeDatos = [
         nombre:"Zapatillas Nike Dunk Low Retro",
         marca: "Nike",
         precio: 239.999,
-        img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwbd8bb332/products/NIFQ8249-100/NIFQ8249-100-1.JPG"
+        img:"https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwbd8bb332/products/NIFQ8249-100/NIFQ8249-100-1.JPG",
+        descripcion: 'Estas son unas zapatillas',
     },
     {
         id:2,

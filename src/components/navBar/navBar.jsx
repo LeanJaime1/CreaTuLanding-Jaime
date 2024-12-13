@@ -24,20 +24,10 @@ function NavBar({ contador, emptyCart, setFilteredProducts, resetFilters }) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link active text-light" to="/productos">Productos</Link>
+                <Link className="nav-link active text-light" to="/productos">Adidas</Link>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Filtrar
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Adidas')}>Adidas</a></li>
-                  <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Nike')}>Nike</a></li>
-                  <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Jordan')}>Jordan</a></li>
-                  <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Puma')}>Puma</a></li>
-                  <li><a className="dropdown-item" href="#" onClick={() => handleFilterChange('Fila')}>Fila</a></li>
-                  <li><a className="dropdown-item" href="#" onClick={resetFilters}> - Quitar filtros</a></li>
-                </ul>
+              <li className="nav-item">
+                <Link className="nav-link active text-light" to="/productos">Nike</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active text-light" to="#"><CartWidget contador={contador} /></Link>
