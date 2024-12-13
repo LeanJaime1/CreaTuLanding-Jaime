@@ -35,13 +35,7 @@ const Item = ({ elemento, addToCart }) => {
           <div className='price'>
             <p className="card-text"><small className="text-muted">{elemento.marca}</small></p>
             <button className='button-price' onClick={() => addToCart(elemento)}> 
-              <span>Add to cart</span>
-              <div className="cart">
-                <svg viewBox="0 0 36 26">
-                  <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                  <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                </svg>
-              </div>
+              <span>Ver detalles</span>
             </button>
           </div>
         </div>
