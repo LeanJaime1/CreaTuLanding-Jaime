@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import baseDeDatos from '../data/backend-falso.js'; 
+import { getProducts } from '../data/backend-falso.js'; 
 import './articulo.css';
 
 const Articulo = () => {
   const { id } = useParams();
+  const [articulo, setArticulo] = useState(null);
 
-  const articulo = baseDeDatos.find(item => item.id === parseInt(id));
-  
+  useEffect(() => {
+    const fetchData = async () => {
+      const products = await getProducts();
+      const foundArticulo = products.find(item => item.id === id); 
+      setArticulo(foundArticulo);
+    };
+
+    fetchData();
+  }, [id]);
+
   if (!articulo) {
     return <div>Artículo no encontrado</div>;
   }
 
-
-
-  
   return (
     <div className='articleBox'>
       <img src={articulo.img} alt={articulo.nombre} />

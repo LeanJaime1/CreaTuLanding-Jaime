@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './itemListContainer.css';
 
 const Item = ({ elemento, addToCart }) => {
-  
+
   useEffect(() => {
     const buttons = document.querySelectorAll('.button-price');
     
@@ -41,8 +41,6 @@ const Item = ({ elemento, addToCart }) => {
               <p className="card-text"><small className="text-muted">{elemento.marca}</small></p>
             </div>
           </div>
-
-
         </div>
       </div>
     </>
