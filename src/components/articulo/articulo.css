@@ -34,3 +34,17 @@
 }
 
 
+.button-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 10px;
+    border:0;
+    
+}
+
+
+.button-price:hover{
+    background-color: white;
+    color:#212529;
+    border: solid 1px #212529;
+}

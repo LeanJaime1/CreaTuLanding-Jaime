@@ -15,6 +15,7 @@ function App() {
 
   const emptyCart = () => {
     setContador(0);
+    console.log('El carrito ha sido vaciado.');
   };
 
   return (
@@ -23,7 +24,7 @@ function App() {
         <NavBar contador={contador} emptyCart={emptyCart} />
         <Routes>
           <Route path="/" element={<ItemListContainer addToCart={addToCart} />} />
-          <Route path="/articulo/:id" element={<Articulo />} />
+          <Route path="/articulo/:id" element={<Articulo addToCart={addToCart} />} />
           <Route path="/marca/:marca" element={<ItemListContainer addToCart={addToCart} />} />
           <Route path="*" element={<ItemListContainer addToCart={addToCart} />} />
         </Routes>

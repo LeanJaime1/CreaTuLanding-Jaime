@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getProducts } from '../data/backend-falso.js'; 
 import './articulo.css';
 
-const Articulo = () => {
+const Articulo = ({ addToCart }) => {
   const { id } = useParams();
   const [articulo, setArticulo] = useState(null);
 
@@ -28,14 +28,14 @@ const Articulo = () => {
         <h1>{articulo.nombre}</h1>
         <p>${articulo.precio}</p>
         <p>{articulo.descripcion}</p>
-        <button className='button-price'> 
-              <span>Agregar al carrito</span>
+        <button className='button-price' onClick={addToCart}> 
+              <span>+ Agregar al carrito</span>
               <div className="cart">
-                <svg viewBox="0 0 36 26">
-                  <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                  <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                </svg>
+                
               </div>
+            </button>
+            <button>
+              <span>Finalizar</span>
             </button>
       </div>
     </div>
