@@ -1,55 +1,90 @@
 .articleBox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box; 
-    margin-top: 80px;
-}
-
-.articleBox img {
-    width: 50vh;
-    height: 50vh;
-    border-radius: 20px;
-}
-
-.articleTextBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.articleBox h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-@media (min-width: 800px) {
-    .articleBox {
-        flex-direction: row;
-        justify-content: center; 
-        align-items: center; 
-        margin: 150px;
-    }
-}
-
-.articleButtons{
-    display: flex;
-    width: 350px;
-    justify-content: space-around;
-}
-
-.button-price{
-    background-color: #212529;
-    color: white;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    border:0;
-    
-}
-
-
-.button-price:hover{
-    background-color: white;
-    color:#212529;
-    border: solid 1px #212529;
-}
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+  }
+  
+  .articleBox img {
+    max-width: 300px; 
+    border-radius: 10px;
+    margin-right: 20px; 
+  }
+  
+  .articleTextBox {
+    flex: 1;
+  }
+  
+  .articleTextBox h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .articleTextBox p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .selectOptions {
+    margin-bottom: 20px;
+  }
+  
+  .selectOptions label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .selectOptions .optionsContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .selectOptions .optionSquare {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+  }
+  
+  .selectOptions .optionSquare.selected {
+    border-color: #343a40;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .articleButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .button-price {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-price:hover {
+    background-color: #343a40;
+  }
+  
