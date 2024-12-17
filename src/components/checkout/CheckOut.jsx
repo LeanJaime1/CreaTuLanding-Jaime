@@ -16,11 +16,11 @@ const CheckOut = ({ carrito, removeFromCart }) => {
         {carrito.map((producto, index) => (
           <div key={index} className="checkout-item">
             <img src={producto.img} alt={producto.nombre} />
-            <div>
+            
               <span>{producto.nombre}</span>
               <span>${producto.precio}</span>
-              <button onClick={() => removeFromCart(index)}>Eliminar</button> 
-            </div>
+              <button className='deleteButton' onClick={() => removeFromCart(index)}>Eliminar</button> 
+            
           </div>
         ))}
       </div>

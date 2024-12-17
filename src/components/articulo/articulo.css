@@ -85,6 +85,25 @@
   }
   
   .button-price:hover {
-    background-color: #343a40;
+    background-color:black ;
   }
   
+
+
+  @media (width  <= 850px){
+    .articleBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .articleBox h1{
+      text-align: center;
+    }
+
+    .articleBox img{
+      margin: 0px;
+    }
+    
+}
