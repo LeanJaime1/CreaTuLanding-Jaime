@@ -33,6 +33,11 @@
     }
 }
 
+.articleButtons{
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
 
 .button-price{
     background-color: #212529;

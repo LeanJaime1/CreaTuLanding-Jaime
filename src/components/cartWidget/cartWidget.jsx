@@ -1,21 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+import CheckOut from '../checkout/CheckOut';
 
-
-const cartWidget = ({contador}) => {
-
-
-  
+const CartWidget = ({contador}) => {
   return (
-
-    
-    
     <div>
-
       <span>{contador}</span>
-      <i class="fa-solid fa-cart-shopping"></i> 
+      <Link to="/checkout"> 
+        <i className="fa-solid fa-cart-shopping"></i>
+      </Link>
     </div>
-    
   )
 }
 
-export default cartWidget
+export default CartWidget;
