@@ -40,8 +40,10 @@ const Articulo = ({ addToCart }) => {
     <div className='articleBox'>
       <img src={articulo.img} alt={articulo.nombre} />
       <div className='articleTextBox'>
-        <h1>{articulo.nombre}</h1>
-        <p className='price'>${articulo.precio}</p>
+        <div className='title-price'>
+          <h1>{articulo.nombre}</h1>
+          <span className='price'>${articulo.precio}</span>
+        </div>
         <p>{articulo.descripcion}</p>
         <div className='selectOptions'>
           <label>Talle:</label>
