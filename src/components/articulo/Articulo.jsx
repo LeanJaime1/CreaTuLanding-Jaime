@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProducts } from '../data/backend-falso.js'; 
 import './articulo.css';
+import swal from 'sweetalert';
 
 const Articulo = ({ addToCart }) => {
   const { id } = useParams();
@@ -31,6 +32,11 @@ const Articulo = ({ addToCart }) => {
   if (!articulo) {
     return <div>Artículo no encontrado</div>;
   }
+
+  const handleAddToCart = () => {
+    addToCart({...articulo, talle, color});
+    swal("¡Agregado al carrito!", `${articulo.nombre} ha sido añadido a tu carrito.`, "success");
+  };
 
   const handleFinalizar = () => {
     navigate('/checkout');
@@ -75,7 +81,7 @@ const Articulo = ({ addToCart }) => {
           </div>
         </div>
         <div className='articleButtons'>
-          <button className='button-price' onClick={() => addToCart({...articulo, talle, color})}> 
+          <button className='button-price' onClick={handleAddToCart}> 
             <span>+ Agregar al carrito</span>
           </button>
           <button className='button-price' onClick={handleFinalizar}>

@@ -1,4 +1,4 @@
-/* checkout.css */
+
 html, body {
   margin-top: 50px;
   padding: 0;
@@ -57,7 +57,7 @@ html, body {
   font-weight: bold;
   margin-top: 20px;
   font-size: 1.2rem;
-  color: #007bff; /* Color de resalte */
+  color: #007bff; 
 }
 
 .checkout-button {
@@ -124,4 +124,66 @@ html, body {
 
 .deleteButton:hover {
   background-color:black ;
+}
+
+
+/* checkout.css */
+.checkoutForm {
+  margin-top: 20px;
+}
+
+.checkoutForm form div {
+  margin-bottom: 10px;
+}
+
+.checkoutForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.checkoutForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkoutForm button {
+  margin-top: 10px;
+  background-color: #343a40; /* Coincide con el estilo del botón en Articulo */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutForm button:hover {
+  background-color: #23272b; /* Color más oscuro para el hover */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }

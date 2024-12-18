@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Articulo from './components/articulo/Articulo.jsx';
 import CheckOut from './components/checkout/CheckOut.jsx'; 
+import Formulario from './components/formulario/Formulario.jsx'; 
 
 function App() {
   const [contador, setContador] = useState(0);
@@ -37,7 +38,8 @@ function App() {
           <Route path="/" element={<ItemListContainer addToCart={addToCart} />} />
           <Route path="/articulo/:id" element={<Articulo addToCart={addToCart} />} />
           <Route path="/marca/:marca" element={<ItemListContainer addToCart={addToCart} />} />
-          <Route path="/checkout" element={<CheckOut carrito={carrito} removeFromCart={removeFromCart} />} /> 
+          <Route path="/checkout" element={<CheckOut carrito={carrito} removeFromCart={removeFromCart} emptyCart={emptyCart} />} /> 
+          <Route path="/formulario" element={<Formulario emptyCart={emptyCart} />} /> 
           <Route path="*" element={<ItemListContainer addToCart={addToCart} />} />
         </Routes>
         <Footer />

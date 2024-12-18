@@ -1,12 +1,13 @@
 import React from 'react';
 import './checkout.css'; 
+import { useNavigate } from 'react-router-dom';
 
-const CheckOut = ({ carrito, removeFromCart }) => {
+const CheckOut = ({ carrito, removeFromCart, emptyCart }) => {
   const total = carrito.reduce((acc, producto) => acc + producto.precio, 0);
+  const navigate = useNavigate(); 
 
   const finalizarCompra = () => {
-    alert('Compra finalizada con éxito');
-    
+    navigate('/formulario'); 
   };
 
   return (
@@ -16,11 +17,9 @@ const CheckOut = ({ carrito, removeFromCart }) => {
         {carrito.map((producto, index) => (
           <div key={index} className="checkout-item">
             <img src={producto.img} alt={producto.nombre} />
-            
-              <span>{producto.nombre}</span>
-              <span>${producto.precio}</span>
-              <button className='deleteButton' onClick={() => removeFromCart(index)}>Eliminar</button> 
-            
+            <span>{producto.nombre}</span>
+            <span>${producto.precio}</span>
+            <button className='deleteButton' onClick={() => removeFromCart(index)}>Eliminar</button>
           </div>
         ))}
       </div>
