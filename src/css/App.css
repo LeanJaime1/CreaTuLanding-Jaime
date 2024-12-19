@@ -6,10 +6,14 @@
 
 
 body{
-  margin: auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin-top: 100px
+  height: 100%;
 }
 
 
+footer{
+  margin-top: 450px;
+  
+}
